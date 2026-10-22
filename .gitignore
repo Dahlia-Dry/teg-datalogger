@@ -23,7 +23,6 @@ _autosave-*
 *~
 
 # Local, per-user project state (window layout, visible layers, selection)
-# Not design data; changes every time you open the project.
 *.kicad_prl
 
 # Caches
@@ -54,9 +53,6 @@ sym-info-cache
 # ---------------------------------------------------------------
 # Fabrication / assembly outputs
 # These are all generated from the .kicad_pcb / .kicad_sch.
-# Many people track them only at release time (e.g. a tagged commit
-# or GitHub release). If you WANT them in the repo, delete the line
-# for the folder you want to keep.
 # ---------------------------------------------------------------
 gerber/
 gerbers/
@@ -65,6 +61,7 @@ jlcpcb/
 fabrication/
 output/
 bom/
+fabrication-toolkit-options.json
 
 # ---------------------------------------------------------------
 # OS / editor junk
