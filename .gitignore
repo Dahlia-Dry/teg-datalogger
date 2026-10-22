@@ -1,0 +1,87 @@
+# ---------------------------------------------------------------
+# KiCad (general-purpose .gitignore)
+# ---------------------------------------------------------------
+
+# Lock files (KiCad writes these while a project/file is open)
+~*.lck
+*.lck
+\#auto_saved_files#
+
+# Autosave and backup files
+_autosave-*
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*.kicad_sym-bak
+*.kicad_mod-bak
+*.sch-bak
+*.pcb-bak
+*.bak
+*.000
+*.tmp
+*~
+
+# Local, per-user project state (window layout, visible layers, selection)
+# Not design data; changes every time you open the project.
+*.kicad_prl
+
+# Caches
+fp-info-cache
+sym-info-cache
+*-cache.lib
+*-cache.dcm
+*.kicad_sch.cache
+
+# Generated reports / netlists (re-creatable from the design)
+*-erc.rpt
+*-drc.rpt
+*.erc
+*.drc
+*.rpt
+*.log
+
+# Local library tables (machine-specific paths).
+# Remove these two lines if you use a project-local fp-lib-table / sym-lib-table
+# that references your own libraries -- then you DO want them tracked.
+# fp-lib-table
+# sym-lib-table
+
+# 3D / mechanical export scratch
+*.step.bak
+*.wrl.bak
+
+# ---------------------------------------------------------------
+# Fabrication / assembly outputs
+# These are all generated from the .kicad_pcb / .kicad_sch.
+# Many people track them only at release time (e.g. a tagged commit
+# or GitHub release). If you WANT them in the repo, delete the line
+# for the folder you want to keep.
+# ---------------------------------------------------------------
+gerber/
+gerbers/
+production/
+jlcpcb/
+fabrication/
+output/
+bom/
+
+# ---------------------------------------------------------------
+# OS / editor junk
+# ---------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python (KiCad scripting plugins, helper scripts)
+__pycache__/
+*.pyc
+.venv/
